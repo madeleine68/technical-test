@@ -20,6 +20,14 @@
 }
 
 #app .container-view {
+  background-color: #F9F9F8;
   padding: 20px;
+  min-height: 666px;
+  flex-direction: column;
+  display: flex;
 }
+.keypad {
+  width: 70px;
+}
+
 

@@ -1,9 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import Header from './Header.jsx';
-import Activity from './Activity.jsx';
 import axios from 'axios'
+import {  BrowserRouter } from "react-router-dom"
+import { Tabs, Tab, TabList,TabPanel } from "react-tabs";
+import Inbox from './Inbox.jsx';
+import All from './All.jsx';
+import Archived from './Archived.jsx'
+import 'react-tabs/style/react-tabs.css';
+import Footer from './Footer.jsx';
+import { group } from './helper'
 
 const App = () => {
   const [activityData, setActivityData] = useState();
@@ -13,11 +20,25 @@ const App = () => {
           .then(res => setActivityData(res.data))
           .catch(err => console.log(err))
   }, [])
+  const grouped = activityData ? group(activityData) : null
+ 
   return (
+    
     <div className='container'>
+      <div className="container-view">
       <Header/>
-      <Activity activityData={activityData}/>
-      <div className="container-view">Some activities should be here</div>
+      <BrowserRouter>
+        <Tabs >
+          <TabList>
+            <Tab> All Calls</Tab>
+            <Tab> Archived </Tab>
+          </TabList>
+          <TabPanel>  <All grouped={grouped} activityData={activityData}/> </TabPanel>
+          <TabPanel> <Archived grouped={grouped} activityData={activityData}/> </TabPanel>
+        </Tabs>
+      </BrowserRouter>  
+        <Footer activityData={activityData}/>
+      </div>
     </div>
   );
 };
