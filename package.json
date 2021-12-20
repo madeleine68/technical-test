@@ -45,7 +45,7 @@
     "url": "https://github.com/madeleine68/technical-test/issues"
   },
   "engines": {
-    "node": "14.0.0"
+    "node": "16.10.0"
   },
   "homepage": "https://github.com/madeleine68/technical-test#readme",
   "browserslist": {
