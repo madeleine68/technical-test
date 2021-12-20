@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "Leap test",
   "main": "index.js",
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madeleine68/technical-test.git"
+  },
   "author": "",
-  "license": "",
+  "license": "ISC",
   "private": false,
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
@@ -38,5 +41,9 @@
     "webpack": "4.29.*",
     "webpack-cli": "3.2.*",
     "webpack-dev-server": "3.1.*"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/madeleine68/technical-test/issues"
+  },
+  "homepage": "https://github.com/madeleine68/technical-test#readme"
 }
