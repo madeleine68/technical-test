@@ -45,5 +45,8 @@
   "bugs": {
     "url": "https://github.com/madeleine68/technical-test/issues"
   },
+  "engines": {
+    "node": "14.x"
+  },
   "homepage": "https://github.com/madeleine68/technical-test#readme"
 }
