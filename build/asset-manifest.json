@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/madeleine68/technical-teststatic/css/main.eea286da.css",
+    "main.js": "/madeleine68/technical-teststatic/js/main.5ee517db.js",
+    "index.html": "/madeleine68/technical-testindex.html",
+    "main.eea286da.css.map": "/madeleine68/technical-teststatic/css/main.eea286da.css.map",
+    "main.5ee517db.js.map": "/madeleine68/technical-teststatic/js/main.5ee517db.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eea286da.css",
+    "static/js/main.5ee517db.js"
+  ]
+}
